@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav > ul {
+            display: flex ;
+            
+        }
+        nav ul li{
+            list-style: none;
+            margin-right: 10px;
+            padding: 5px;
+        }
+        nav li a {
+            text-decoration: none;
+            color: gold;
+        }
+       
+        .drop{
+            display: none;
+
+        }
+        nav li:hover .drop{
+            display: block;
+            position: absolute;
+            padding-left: 10px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">Program</a>
+                   
+                        <ul class="drop">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Program</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>

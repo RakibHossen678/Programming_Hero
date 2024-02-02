@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            height: 100vh;
+            background-color: bisque;
+        }
+        .green{
+            height: 250px;
+            width: 500px;
+            background-color: green;
+            position: relative;
+            left: 50%;
+            top:  30%;
+            transform: translate(-50% ,-30%);
+           
+        }
+        .red{
+            height: 130px;
+            width: 130px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            left: 50%;
+            top:  50%;
+            transform: translate(-50% ,-50%);
+        }
+        .sec{
+            width: 25px;
+            height: 200px;
+           background-color: black;
+            position: relative;
+            top: 95%;
+            border-top-right-radius:17px ;
+        }
+        .base{
+            width: 80px;
+            height: 50px;
+            background-color: black;
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main" >
+        <div class="green">
+            <div class="red"></div>
+            <div class="sec">
+                <div class="base"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img {
+            width: 100%;
+            height: 100%;
+         }
+         .row , .row2 div{
+            flex: 1;
+         }
+         .row{
+            height: 400px;
+            margin-bottom: 5px;
+           
+         }
+         .row2{
+            display: flex;
+            gap: 5px;
+            height: 350px;
+            margin-top: 5px;
+            
+         }
+         .hor {
+            
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+            
+         }
+         .ver img{
+            height: calc((100% - 5px)/2);
+
+
+         }
+         @media screen and (max-width:576px) {
+            .row , .row2{
+                flex-direction: column;
+                height: auto;
+            }
+            .hor{
+                grid-template-columns: 1fr;
+                
+            }
+            
+         }
+         @media screen and (min-width:576px) and (max-width:992px) {
+            .row , .row2{
+                flex-direction: column;
+                height: auto;
+            }
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My picture collage</h1>   
+    </header>
+    <main>
+        <section>
+            <div class="row">
+                <img src="images/A.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="row2">
+                <div>
+                    <img src="images/B.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/C.jpg" alt="">
+                </div>
+                
+               
+               <div class="ver">
+                <img src="images/D.jpg" alt="">
+                <img src="images/E.jpg" alt="">
+               </div>
+            </div>
+        </section>
+        <div class="row2">
+            <div>
+                <img src="images/F.jpg" alt="">
+            </div>
+            <div class="hor"> 
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/H.jpg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

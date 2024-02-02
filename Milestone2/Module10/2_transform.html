@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 50px;
+        }
+        .container , .inner{
+            width: 200px;
+            height:200px ;
+
+        }
+        .container{
+            border: 2px solid steelblue;
+            background-color: aquamarine;
+        }
+        .inner{
+            border: 2px solid brown;
+            background-color: palegoldenrod;
+            /* transform: scale(.25 , .5); */
+            /* transform: rotate(90deg); */
+            /* transform: rotate(45deg); */
+            /* transform: rotate(180deg); */
+            transform: scale(0.6)  rotate(45deg) translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Transform and Translate</h2>
+
+    <div class="container">
+        <div class="inner">inner1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner3</div>
+    </div>
+</body>
+</html>
