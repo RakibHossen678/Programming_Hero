@@ -14,6 +14,6 @@ function make_avg(array){
         // console.log(avg);
     }
 
-    return { avg , sum }
+    return  avg 
 }
 console.log(make_avg([10,20,40,50]));
