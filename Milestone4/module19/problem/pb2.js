@@ -39,16 +39,16 @@ let word ='epoxy';
 // console.log(repx2)
 
 
-// let vowel = ["a","i","e","u","o"];
-// let str = "Hello";
-// let isVowel = false;
-// for (let i = 0; i < str.length; i++){
-// if(str.includes(vowel[i])){
-// isVowel = true;
-// break;
-// }
-// }
-// console.log(isVowel);
+let vowel = ["a","i","e","u","o"];
+let str = "Hello";
+let isVowel = false;
+for (let i = 0; i < str.length; i++){
+if(str.includes(vowel[i])){
+isVowel = true;
+break;
+}
+}
+console.log(isVowel);
 
 
 // Capitalize Every first Letter of each word in a String
