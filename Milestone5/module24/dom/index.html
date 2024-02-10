@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>What is DOM manipulation</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet eos ipsam accusantium cum iusto quibusdam.
+            Excepturi ipsa rem nisi, repellendus dolore velit? Magnam inventore corrupti et cum, ea nam ut.</p>
+    </header>
+    <main>
+        <section id="fruits"> 
+            <h1 id="f-title">some fruits name</h1>
+            <ul>
+                <li>apple</li>
+                <li>banana</li>
+                <li>mango</li>
+            </ul>
+        </section>
+        <section class="container">
+            <h1>What is DOM manipulation</h1>
+            <ul>
+                <li>Document</li>
+                <li>Object</li>
+                <li>Model</li>
+            </ul>
+            <ul>
+                <li class="item">Document</li>
+                <li class="item">Object</li>
+                <li class="item">Model</li>
+            </ul>
+        </section>
+        <section id="dommm" class="Dom">
+            <h1 class="title" class="Dom">What is DOM manipulation</h1>
+            <ul>
+                <li>Document</li>
+                <li>Object</li>
+                <li>Model</li>
+            </ul>
+            <ul class="Dom">
+                <li>Document</li>
+                <li>Object</li>
+                <li>Model</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    
+    <script>
+        console.log(document.getElementById('f-title').style.color = 'white');
+        console.log(document.getElementById('f-title').style.backgroundColor ='teal');
+        console.log(document.getElementById('f-title').style.padding ='20px');
+        
+    </script>
+</body>
+
+</html>
