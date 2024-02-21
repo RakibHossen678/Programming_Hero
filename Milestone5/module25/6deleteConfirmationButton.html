@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explore More event</h1>
+    <button id="btn">Events</button>
+    <input type="text" id="textField">
+    <script>
+        // document.getElementById('textField').addEventListener('blur' , function(){
+        //     console.log('event triggered inside the the input field blur');
+        // })
+        // document.getElementById('textField').addEventListener('focus' , function(){
+        //     console.log('event triggered inside the the input field');
+        // })
+        // document.getElementById('textField').addEventListener('keydown' , function(event){
+        //     console.log(event.target.value);
+        // })
+        // document.getElementById('textField').addEventListener('keypress' , function(event){
+        //     console.log(event.target.value);
+        // })
+        document.getElementById('textField').addEventListener('keyup' , function(event){
+            console.log(event.target.value);
+        })
+        document.getElementById('btn').addEventListener('mouseenter',function(){
+        // console.log('Event trigered'); 
+        
+        })
+    </script>
+</body>
+</html>

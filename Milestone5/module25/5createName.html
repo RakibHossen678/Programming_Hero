@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display:grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(7 ,1fr );
+            max-width: 80%;
+            margin: 200px auto;
+            
+        }
+        h1{
+            text-align: center;
+            cursor: pointer;
+                    
+        }
+    </style>
+</head>
+<body>
+   <div id="forp">
+    <h1 class="letter">a</h1>
+    <h1 class="letter">b</h1>
+    <h1 class="letter">c</h1>
+    <h1 class="letter">d</h1>
+    <h1 class="letter">e</h1>
+    <h1 class="letter">f</h1>
+    <h1 class="letter">g</h1>
+    <h1 class="letter">h</h1>
+    <h1 class="letter">i</h1>
+    <h1 class="letter">j</h1>
+    <h1 class="letter">k</h1>
+    <h1 class="letter">l</h1>
+    <h1 class="letter">m</h1>
+    <h1 class="letter">n</h1>
+    <h1 class="letter">o</h1>
+    <h1 class="letter">p</h1>
+    <h1 class="letter">Q</h1>
+    <h1 class="letter">r</h1>
+    <h1 class="letter">s</h1>
+    <h1 class="letter">t</h1>
+    <h1 class="letter">u</h1>
+    <h1 class="letter">v</h1>
+    <h1 class="letter">w</h1>
+    <h1 class="letter">x</h1>
+    <h1 class="letter">y</h1>
+    <h1 class="letter">z</h1>
+   </div>
+    <script>
+       const leter= document.getElementsByClassName('letter');
+    //    console.log(leter);
+    for (const word of leter) {
+        word.addEventListener('click' , function(event){
+            // console.log(event.target);
+            const innerword=word.innerText
+            // console.log(innerword);
+            const divcontainer = document.getElementById('forp')
+            const para=document.createElement('p');
+            para.innerText=innerword;
+            divcontainer.appendChild(para)
+        })
+    }
+        
+    </script>
+</body>
+</html>

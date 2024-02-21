@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <h1 title="this is dom" onclick="console.log('I am clicked');">Speacial events of DOM(Document Object Model)</h1>
+    <button id="btn" onclick="console.log(7);">Click Me</button>
+    <br>
+    <br>
+    <button id="btn" onclick="console.log(45);">Another button</button>
+    <br>
+    <br>
+    <!-- //1st way  -->
+    <button onclick="document.body.style.backgroundColor='Yellow', document.body.style.color='black'">Make Yellow</button>
+    <br>
+    <br>
+
+    <!-- // 2nd way -->
+    <button onclick="console.log(makeRed());">Make Red</button>
+
+    <br>
+    <br>
+    <!-- 3rd way -->
+
+    <button id="make_blue" >Make Blue</button>
+
+    <br>
+    <br>
+    <!-- 4th way -->
+
+    <button id="makepurple">Make Purple</button>
+
+    <!-- 5t way -->
+    <button id="make_pink">Make Pink</button>
+
+    <!-- 6th way -->
+    <button id="golden">Make golden</button>
+
+
+    <script>
+        // 2nd way
+        function makeRed(){
+            document.body.style.backgroundColor='red'
+            document.body.style.color='white'
+            document.body.style.padding='30px'
+        }
+        
+        // 3rd way
+        const makeblue=document.getElementById('make_blue')
+        // console.log(makeblue);
+        makeblue.onclick =makeBlue
+        function makeBlue(){
+            document.body.style.backgroundColor='blue'
+        }
+        
+
+        // 4th way
+
+        const makePurple=document.getElementById('makepurple');
+        
+        makePurple.onclick=function Makepurple(){
+            document.body.style.backgroundColor='purple'
+        }
+
+        //5th way
+
+        const makePink=document.getElementById('make_pink');
+        makePink.addEventListener('click',function make_Pink(){
+            document.body.style.background='pink'
+        }
+        
+        )
+
+        // 6th way
+        //Impotant:we will use this sometimes
+        document.getElementById('golden').addEventListener('click', function(){
+            document.body.style.background='goldenrod'
+        })
+
+
+        
+    </script>
+</body>
+</html>
