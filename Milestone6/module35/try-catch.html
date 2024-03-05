@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 150px;
+        }
+        #container{
+            font-size: 30px;
+        }
+        #age{
+            width: 450px;
+            height:20px ;
+            padding: 10px 5px;
+        }
+
+        #container div button{
+            height:43px ;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <h1>Create coutom error using Try and Catch</h1>
+        <div>
+            <input type="text" id="age" placeholder="Enter age between 18-30"/>
+            <button onclick="checkAge()" type="submit">Submit</button>
+            <p  id="error"></p>
+        </div>
+    </section>
+
+    <script>
+        function checkAge(){
+            const ageField=document.getElementById('age');
+            const ageText = ageField.value;
+            const errorTag = document.getElementById('error')
+            
+            try{
+            const age = parseInt(ageText)
+                if(isNaN(age)){
+                    throw 'Please enter a number'
+                }
+            }
+            catch(err){
+                console.log('ERROR:' , err)
+                errorTag.innerText='something wrong'
+            }
+            finally{
+                console.log('all done ')
+            }
+        }
+
+    </script>
+</body>
+</html>
